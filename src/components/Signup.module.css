@@ -1,44 +1,42 @@
-#main {
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
+
   min-height: 100vh;
-  background-image: url("../assets/ipl.jpg");
+  background-image: url("../assets/cric3.webp");
   background-size: cover;
   background-position: center;
-
-  padding: 1rem;
+  background-repeat: no-repeat;
   box-sizing: border-box;
 }
 
 .card {
-  /* margin-left: 10%; */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background: linear-gradient(93deg,rgb(179, 230, 250),rgb(236, 236, 174)); */
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 100%;
-  text-align: center;
-  /* backdrop-filter: blur(8px); */
-  transition: transform 0.5s ease;
+  /* backdrop-filter: blur(10px); */
+  transition: transform 0.4s ease;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 h2 {
-  color: #333;
-  font-size: 1.8rem;
+  text-align: center;
   margin-bottom: 1.5rem;
+  color: #333;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
 }
 
 .form-group {
   margin-bottom: 1.5rem;
-  text-align: left;
 }
 
 label {
@@ -55,30 +53,32 @@ input {
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 1rem;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-  margin-bottom: 1rem;
   transition: border-color 0.3s ease;
 }
 
 input:focus {
-  border-color: #2575fc;
+  border-color: #007bff;
   outline: none;
 }
 
-button {
+.btn {
   width: 100%;
   padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
   border: none;
   border-radius: 6px;
-  background-color: #2575fc;
-  color: #ffffff;
-  font-size: 1rem;
   cursor: pointer;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
   transition: background-color 0.3s ease;
+  margin-top: 1rem;
 }
 
-button:hover {
-  background-color: #1a54b9;
+.btn:hover {
+  background-color: #0056b3;
 }
 
 .message {
@@ -102,19 +102,21 @@ button:hover {
 
 .register-link {
   margin-top: 1.5rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .register-link p {
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
-.register-link a {
-  color: #2575fc;
+.register-link span a {
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.register-link a:hover {
-  color: #1a54b9;
+.register-link span a:hover {
+  color: #0056b3;
 }
